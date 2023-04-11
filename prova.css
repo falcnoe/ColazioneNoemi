@@ -1,0 +1,172 @@
+
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+  padding: 10px;
+  background: #f9e0c0;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: left;
+  background: rgba(204, 149, 76, 0.675);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #be9250;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: red;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background:#be9250;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>LA COLAZIONE NEL MONDO</h1>
+  <p>Scorpiamo insieme alcune colazioni...</p>
+  
+</div>
+
+<div class="topnav">
+  <a href="#">Ricette</a>
+  <a href="#">Immagini</a>
+  <a href="#">Video</a>
+  <a href="#" style="float:right">HOME</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+   
+    
+  </div>
+      <div class="row">
+      <h2>Colazione Giapponese</h2>
+     
+      <div class="fakeimg" style="height:200px;">Image</div>
+      
+      <p> Esistono due tipi di colazione in Giappone: la prima è quella tradizionale giapponese,
+         composta dagli alimenti tipici giapponesi come riso e pesce, che data la sua ricchezza di cibo somiglia più ad un pranzo che ad una colazione. 
+         La seconda è una colazione moderna, nata per necessità di velocità e che richiama la colazione veloce occidentale. </p>
+    </div>
+    <hr/>
+  </div>
+   <div class="row">
+      <h2>Colazione Americana</h2>
+      
+      <div class="fakeimg" style="height:200px;">Image</div>
+      
+      <p>La parola d'ordine per la colazione all'americana è varietà.
+        Pancakes e uova, con il caffè lungo americano e il succo d'arancia, sono i protagonisti indiscussi,
+         ma non mancano toast, bagel, muffin e la versione più light con yogurt, cereali e frutti di bosco.</p>
+    </div>
+    <hr/>
+     <div class="row">
+      <h2>Colazione Messicana</h2>
+     
+      <div class="fakeimg" style="height:200px;">Image</div>
+      
+      <p>La colazione della cucina messicana è abbondante e costituita da caffè o tè, panini dolci (pan dulce), 
+        succo di frutta, frutta tropicale (sempre fresca di stagione), toast con uova e marmellata, 
+        ma anche huevos alla messicana  o estrellados.</p>
+    </div>
+ 
+      <h3>E tu? Preferisci DOLCE o SALATO?</h3>
+     
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Seguimi per altre colazioni!</h2>
+</div>
+
+</body>
+</html>
+
+
